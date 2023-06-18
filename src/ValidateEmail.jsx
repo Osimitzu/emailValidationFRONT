@@ -12,7 +12,7 @@ function ValidateEmail() {
     if (token) {
       axios
         .post(
-          "https://final-project-backend.netlify.app/users/email-validate",
+          "https://final-project-backend-emailvalidation.vercel.app/users/email-validate",
           {
             token,
           }
