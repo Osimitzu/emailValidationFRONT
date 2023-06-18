@@ -11,12 +11,9 @@ function ValidateEmail() {
   useEffect(() => {
     if (token) {
       axios
-        .post(
-          "https://final-project-backend-emailvalidation.vercel.app/api/v1/users/email-validate",
-          {
-            token,
-          }
-        )
+        .post("localhost:8000/api/v1/users/email-validate", {
+          token,
+        })
         .then((resp) => setData(true))
         .catch((err) => {
           setErr(true);
