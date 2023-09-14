@@ -11,9 +11,12 @@ function ValidateEmail() {
   useEffect(() => {
     if (token) {
       axios
-        .post("http://localhost:8000/api/v1/users/email-validate", {
-          token,
-        })
+        .post(
+          "https://e-commerce-backend-sxpd.onrender.com/api/v1/users/email-validate",
+          {
+            token,
+          }
+        )
         .then((resp) => setData(true))
         .catch((err) => {
           setErr(true);
