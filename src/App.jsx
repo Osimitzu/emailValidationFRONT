@@ -24,7 +24,7 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/email-validate" element={<ValidateEmail />} />
+        <Route path="/emailValidate" element={<ValidateEmail />} />
       </Routes>
     </HashRouter>
   );

@@ -12,7 +12,7 @@ function ValidateEmail() {
     if (token) {
       axios
         .post(
-          "https://e-commerce-backend-sxpd.onrender.com/api/v1/users/email-validate",
+          "https://e-commerce-backend-sxpd.onrender.com/api/v1/users/emailValidate",
           {
             token,
           }
